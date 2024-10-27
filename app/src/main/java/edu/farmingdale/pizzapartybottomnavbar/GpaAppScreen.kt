@@ -34,8 +34,8 @@ fun GpaAppScreen() {
     var btnLabel by remember { mutableStateOf("Calulate GPA") }
 
     Column(
-        modifier = Modifier
-        ,verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.CenterHorizontally
+        modifier = Modifier.fillMaxSize().background(Color.Cyan),
+        verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.CenterHorizontally
     ) {
 
         TextField(
@@ -47,7 +47,7 @@ fun GpaAppScreen() {
 
         TextField(
             value = grade2,
-            onValueChange = { grade2 = it },
+            onValueChange = { grade2 = it }, Modifier.padding(16.dp),
             label = { Text("Course 2 Grade") },
         )
 
@@ -55,7 +55,7 @@ fun GpaAppScreen() {
 
         TextField(
             value = grade3,
-            onValueChange = { grade3 = it },
+            onValueChange = { grade3 = it }, Modifier.padding(16.dp),
             label = { Text("Course 3 Grade") },
         )
 
