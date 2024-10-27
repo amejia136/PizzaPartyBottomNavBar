@@ -87,7 +87,7 @@ fun GpaAppScreen() {
                 btnLabel = "Compute GPA"
             }
         }, modifier = Modifier.padding(top = 56.dp)) {
-            Text(btnLabel)
+            Text("Clear Input Fields")
         }
 
 
